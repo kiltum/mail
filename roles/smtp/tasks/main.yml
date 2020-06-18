@@ -1,0 +1,13 @@
+---
+# tasks file for smtp
+
+- firewalld:
+    service: smtp
+    permanent: yes
+    state: enabled
+
+- firewalld:
+    service: smtps
+    permanent: yes
+    state: enabled
+

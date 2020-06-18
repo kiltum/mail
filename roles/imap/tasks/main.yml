@@ -1,0 +1,13 @@
+---
+# tasks file for imap
+
+- firewalld:
+    service: imap
+    permanent: yes
+    state: enabled
+
+- firewalld:
+    service: imaps
+    permanent: yes
+    state: enabled
+
